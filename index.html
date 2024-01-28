@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dreams visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="stars"></div>
+  <div id="andromeda" onclick="goToAnimation()">
+    <h1>dreams.</h1>
+  </div>
+
+  <script>
+    // Creating stars dynamically
+    const starsContainer = document.getElementById('stars');
+    for (let i = 0; i < 300; i++) {
+      const star = document.createElement('div');
+      star.className = 'star';
+      star.style.width = `${Math.random() * 2}px`;
+      star.style.height = `${Math.random() * 2}px`;
+      star.style.top = `${Math.random() * 100}vh`;
+      star.style.left = `${Math.random() * 100}vw`;
+      starsContainer.appendChild(star);
+    }
+
+    function goToAnimation() {
+      // Redirect to the animation page
+      window.location.href = 'animation.html';
+    }
+  </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+

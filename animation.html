@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dreams visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="stars"></div>
+
+  <!-- Video container with fade-in class -->
+  <div id="video-container" class="fade-in">
+    <video controls autoplay>
+      <!-- Replace 'your-animation.webm' with the actual path to your WebM file -->
+      <source src="assignment one.webm" type="video/webm">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Play the audio once the page loads
+    window.onload = function () {
+      const audio = new Audio('Official.mp3');
+      audio.play();
+    };
+  </script>
+</body>
+
+</html>
